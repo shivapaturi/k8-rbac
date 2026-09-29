@@ -27,13 +27,13 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ---
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
   name: aws-cli
   labels:
     purpose: sa
 spec:
-  ServiceAccount: roboshop-mysql-secret-reader 
+  ServiceAccountName: roboshop-mysql-secret-reader 
   containers:
   - name: awscli
     image: amazon/aws-cli
