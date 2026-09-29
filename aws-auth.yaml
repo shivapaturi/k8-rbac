@@ -14,4 +14,4 @@ data:
     - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::211125615103:user/Jaiishva
-      username: Jaiishva
+      username: jaiishva
