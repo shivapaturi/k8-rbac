@@ -20,8 +20,7 @@ subjects:
 - kind: ServiceAccount
   name: roboshop-mysql-secret-reader # "name" is case sensitive
   namespace: roboshop
-  apiGroup: ""
-roleRef:
+  roleRef:
   # "roleRef" specifies the binding to a Role / ClusterRole
   kind: Role #this must be Role or ClusterRole
   name:  sa-reader # this must match the name of the Role or ClusterRole you wish to bind to
