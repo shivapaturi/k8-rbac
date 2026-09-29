@@ -1,4 +1,8 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
 data:
   mapRoles: |
     - rolearn: arn:aws:iam::211125615103:role/eksctl-roboshop-nodegroup-roboshop-NodeInstanceRole-Wh4g7bzAAKPj
@@ -11,9 +15,3 @@ data:
       - roboshop-trainee
       userarn: arn:aws:iam::211125615103:user/Jaiishva
       username: Jaiishva
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2026-09-29T14:01:43Z"
-  name: aws-auth
-  namespace: kube-system
-  uid: d96f9e38-a788-4656-b02c-f182746c5f70
