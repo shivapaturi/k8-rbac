@@ -10,7 +10,7 @@ data:
     - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::211125615103:user/Jaiishva
-      username: Jaiishva
+      username: jaiishva
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-09-29T14:01:43Z"
